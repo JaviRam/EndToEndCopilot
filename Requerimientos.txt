@@ -1,0 +1,67 @@
+Documento de Requerimientos: Sistema de Recomendación de Películas
+Requerimientos Funcionales
+RF1: Registro de Usuario
+
+Descripción: El sistema permitirá a los usuarios registrarse proporcionando una dirección de correo electrónico y una contraseña.
+Requerimiento: El sistema debe validar la dirección de correo electrónico para evitar duplicados.
+Detalles: La contraseña debe cumplir con ciertos criterios de seguridad (longitud mínima, combinación de caracteres).
+Entrada: Dirección de correo electrónico, contraseña.
+Salida: Mensaje de confirmación de registro o error.
+RF2: Inicio de Sesión
+
+Descripción: Los usuarios registrados podrán iniciar sesión en el sistema utilizando su dirección de correo electrónico y contraseña.
+Requerimiento: El sistema debe validar las credenciales proporcionadas.
+Detalles: En caso de contraseña olvidada, el sistema permitirá restablecerla.
+Entrada: Dirección de correo electrónico, contraseña.
+Salida: Acceso al sistema o mensaje de error.
+RF3: Valoración de Películas
+
+Descripción: Los usuarios podrán valorar las películas que hayan visto utilizando una escala del 1 al 5.
+Requerimiento: El sistema debe almacenar el historial de valoraciones de cada usuario.
+Detalles: Las valoraciones podrán modificarse.
+Entrada: ID de la película, valoración.
+Salida: Confirmación de la valoración.
+RF4: Generación de Recomendaciones
+
+Descripción: El sistema generará recomendaciones de películas personalizadas para cada usuario basado en su historial de valoraciones y en las características de las películas.
+Requerimiento: Las recomendaciones deben ser relevantes y variadas.
+Detalles: El sistema podrá filtrar las recomendaciones por género, año, director, etc.
+Entrada: Perfil del usuario.
+Salida: Lista de películas recomendadas.
+RF5: Búsqueda de Películas
+
+Descripción: Los usuarios podrán buscar películas por título, género, director, actores, etc.
+Requerimiento: La búsqueda debe ser rápida y precisa.
+Detalles: Se podrán realizar búsquedas avanzadas combinando varios criterios.
+Entrada: Términos de búsqueda.
+Salida: Lista de películas que coincidan con los criterios de búsqueda.
+Requerimientos No Funcionales
+NF1: Disponibilidad
+
+Descripción: El sistema debe estar disponible al menos el 99% del tiempo.
+NF2: Desempeño
+
+Descripción: El tiempo de respuesta del sistema debe ser inferior a 2 segundos para la mayoría de las operaciones.
+NF3: Seguridad
+
+Descripción: La información de los usuarios debe estar protegida contra accesos no autorizados.
+Detalles: Implementar medidas de seguridad como encriptación de datos, gestión de contraseñas seguras y protección contra ataques de inyección SQL.
+NF4: Escalabilidad
+
+Descripción: El sistema debe poder escalar para soportar un aumento en el número de usuarios y películas.
+NF5: Usabilidad
+
+Descripción: La interfaz de usuario debe ser intuitiva y fácil de usar.
+NF6: Mantenibilidad
+
+Descripción: El código fuente debe ser bien estructurado y documentado para facilitar futuras modificaciones.
+Ampliando el documento:
+
+Requerimientos específicos: Puedes agregar más requerimientos funcionales como listas de seguimiento, creación de perfiles detallados, integración con redes sociales, etc.
+Requerimientos no funcionales: Puedes incluir detalles sobre la arquitectura del sistema, tecnologías a utilizar, estándares de calidad, etc.
+Priorización: Asigna una prioridad a cada requerimiento para ayudar a enfocar los esfuerzos de desarrollo.
+Consideraciones adicionales:
+
+Personalización: ¿Cómo se manejarán las preferencias de los usuarios a largo plazo?
+Recomendaciones en frío: ¿Cómo se recomendarán películas a usuarios nuevos o con pocas valoraciones?
+Integración con otras plataformas: ¿Se integrará con servicios de streaming como Netflix o Disney+?
